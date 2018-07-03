@@ -12,16 +12,33 @@
 </head>
 <body>
 
-        <div id="player-1"> <h2>Player 1</h2> 
-                <span id="buttons"></span> <br>
+        <form>
+                
+                  <label for="bidder-name">Your Name</label>
+                  <input class="form-control" id="name" type="text">
+                <button  id="submit-name" type="submit">Submit</button>
+              </form>
+
+        <div id="player-1"> <h2 id="player-1-name"></h2> 
+                <span id="buttons1"></span> <br>
                 You chose: <span id="you">      </span> <br>
                 Computer chose: <span id="comp">    </span> <br>
                 Wins: <span id="wins">    </span> <br>
                 Losses: <span id="losses">    </span> <br>
                 Ties: <span id="ties">    </span>
-            
-            
-              </div>
+                Connected Viewers: <span id="connected-viewers">    </span>
+
+        </div>
+
+        <div id="player-2"> <h2 id='player-2-name'></h2> 
+                <span id="buttons2"></span> <br>
+                You chose: <span id="you">      </span> <br>
+                Computer chose: <span id="comp">    </span> <br>
+                Wins: <span id="wins">    </span> <br>
+                Losses: <span id="losses">    </span> <br>
+                Ties: <span id="ties">    </span>
+                Connected Viewers: <span id="connected-viewers">    </span>
+        </div>
     
 </body>
 <script src="assets/javascript/game.js"></script>
